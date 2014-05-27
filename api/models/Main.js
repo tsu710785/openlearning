@@ -9,7 +9,7 @@ module.exports = {
 
   attributes: {
   	id: {
-      type: 'int',
+      type: 'integer',
       required: true
     },
     title: {
@@ -17,7 +17,7 @@ module.exports = {
       required: true
     },
     body: {
-      type: 'string',
+      type: 'text',
       required: true
     }
   }

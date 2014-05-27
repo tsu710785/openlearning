@@ -6,16 +6,17 @@
  */
 
 module.exports = {
+   
    list: function (req, res) {
 
     // Send a JSON response
 
     Main
     .find({})
-    .exec(function (err, test) {
+    .exec(function (err, mains) {
       return res.view("main", {
-        ID: "1",
-        test: test
+        title: "123",
+        mains: mains
     	});
   	});
 },

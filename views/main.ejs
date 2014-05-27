@@ -74,29 +74,13 @@
       </div>
     </div>
   </div>
-<script>  
-$(function(){
-    var availableTags = [
-      '多項式',
-      '力學',
-      '幾何',
-      '矩陣',
-      '微積分',
-      '撿鞋運動',
-      '平面運動',
-      '有氧運動',
-      '金屬',
-      '光電磁',
-      '光學',
-      '直線運動',
-      '片語',
-      '單字',
-      '介係詞',
-      '問題討論區',
-      '代數'
-    ];
-    $('#tags').autocomplete({
-      source: availableTags
-    });
-  });
-</script>
+  <% mains.forEach(function(main) { %>
+  <div>
+
+      <h2><%= main.title %></h2>
+      <div class="content">
+        <%= main.body %>
+      </div>
+  </div>
+
+  <% }); %>
