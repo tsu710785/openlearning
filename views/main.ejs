@@ -1,0 +1,102 @@
+  <div id="index2back">
+    <div class="row">
+      <div class="col-md-1 col-lg-1">
+      </div>
+      <div class="col-md-10 col-lg-10">
+      <h1><font color="white">O</font><font color="#8181F7">pen</font> <font color="white">L</font><font color="#F5A9BC">earning</font></h1>
+
+      <div class="ui-widget ui large icon input">
+        <input id="tags" type="text" placeholder="搜尋">
+      </div>
+      <div id="searchicon"><i class="search icon"></i></div> 
+      <br>     
+
+    <div class="red four fluid ui buttons">
+      <div class="ui button"><i class="large globe icon"></i>物理 / Physics
+        <ul class="phy dropdown-menu">
+          <li><a href="#">運動</a></li>
+          <li><a href="#">力</a></li>
+          <li><a href="#">光電磁</a></li>
+          <li class="divider"></li>
+          <li><a href="#">問題討論區</a></li>
+        </ul>
+      </div>
+      <div class="ui button"><i class="large gift icon"></i>數學 / Math
+        <ul class="math dropdown-menu">
+          <li><a href="#">代數</a></li>
+          <li><a href="#">多項式</a></li>
+          <li><a href="#">幾何</a></li>
+          <li><a href="#">矩陣</a></li>
+          <li><a href="#">微積分</a></li>
+          <li><a href="#">統計</a></li>
+          <li class="divider"></li>
+          <li><a href="#">問題討論區</a></li>
+        </ul>
+      </div>
+      <div class="ui button"><i class="large lab icon"></i>化學 / Chemistry
+        <ul class="chem dropdown-menu">
+          <li><a href="#">有機物</a></li>
+          <li><a href="#">口訣</a></li>
+          <li><a href="#">金屬</a></li>
+          <li><a href="#">非金屬</a></li>
+          <li class="divider"></li>
+          <li><a href="#">問題討論區</a></li>
+        </ul>
+      </div>
+
+        <div class="ui button"><i class="large book icon"></i>英文 / English
+          <ul class="eng dropdown-menu">
+            <li><a href="#">單字</a></li>
+            <li><a href="#">片語</a></li>
+            <li><a href="#">介係詞</a></li>
+            <li class="divider"></li>
+            <li><a href="#">問題討論區</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-1 col-lg-1">
+    </div>  
+  </div>
+
+    <div id="index2contents">
+      <div class="row">
+        <div class="block1 col-md-0 col-lg-1">
+        </div>
+        <div class="block2 col-md-12 col-lg-10" id="mainsection">
+          <div>
+            <div id="edit" class="orange circular ui button" onclick="window.location='/edit';"><i class="glyphicon glyphicon-pencil"></i> E d i t</div>
+          </div>
+        </div>
+        <div class="col-md-0 col-lg-1">  
+        </div>  
+      </div>
+    </div>
+  </div>
+<script>  
+$(function(){
+    var availableTags = [
+      '多項式',
+      '力學',
+      '幾何',
+      '矩陣',
+      '微積分',
+      '撿鞋運動',
+      '平面運動',
+      '有氧運動',
+      '金屬',
+      '光電磁',
+      '光學',
+      '直線運動',
+      '片語',
+      '單字',
+      '介係詞',
+      '問題討論區',
+      '代數'
+    ];
+    $('#tags').autocomplete({
+      source: availableTags
+    });
+  });
+</script>
