@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	// $('body').addClass("index loading");
     $('.button').hover(function(event){
-      $(this).children(".dropdown-menu").delay( 300 ).slideToggle();
+      $(this).children(".dropdown-menu").delay( 400 ).slideToggle();
     });
     $('.dropdown-toggle').dropdown();
     // $('#edit').on('click',function(){
