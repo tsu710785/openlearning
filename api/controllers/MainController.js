@@ -7,7 +7,7 @@
 
 module.exports = {
    
-   list: function (req, res) {
+  list: function (req, res) {
 
     // Send a JSON response
 
@@ -15,11 +15,11 @@ module.exports = {
     .find({})
     .exec(function (err, mains) {
       return res.view("main", {
-        title: "123",
+        title: "main",
         mains: mains
-    	});
-  	});
-},
+      });
+    });
+  },
   
 };
 

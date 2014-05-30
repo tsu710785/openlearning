@@ -34,6 +34,19 @@ module.exports.routes = {
     controller: "main",
     action: "list"
   },
+  'GET /math': {
+    controller: "mathematics",
+    action: "list"
+  },
+  'GET /math/:title': {
+    controller: "mathematics",
+    action: "showid"
+  },
+
+  // 'GET /edit': {
+  //   view:'editor',
+  // },
+
 
 
 
