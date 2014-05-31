@@ -19,7 +19,7 @@ module.exports = {
     body: {
       type: 'text',
       required: true,
-      encoding:"UTF-8"
+
     }
   }
 };

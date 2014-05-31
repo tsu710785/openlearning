@@ -39,10 +39,12 @@ module.exports.connections = {
     // username and password set in /config/local.js
     // but local.js is in gitignore setting
     module: 'sails-mysql',
-    host: "127.0.0.1",
-    port: 3000,
+    host: "db4free.org",
+    // port: 3000,
     database: 'openlearning',
-    user:"root"
+    user:"openlearning",
+    password :'openlearning',
+
 
   },
 
