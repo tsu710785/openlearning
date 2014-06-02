@@ -74,12 +74,15 @@
       </div>
     </div>
   </div>
+
+  
+
   <% maths.forEach(function(math) { %>
   <div>
 
-      <h2><%= math.title %></h2>
+      <h6 style="margin-top:30px">title : <%= math.title %></h6>
       <div class="content">
-        <%= math.body %>
+        <%= math.body %><div style="float:right" class="edit_button"><i class="glyphicon glyphicon-pencil"></i> E d i t</div>
       </div>
   </div>
 

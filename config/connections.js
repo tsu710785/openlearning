@@ -35,7 +35,18 @@ module.exports.connections = {
   // Run:
   // npm install sails-mysql
   //
-  mysql: {
+  // mysql: {
+  //   username and password set in /config/local.js
+  //   but local.js is in gitignore setting
+  //   module: 'sails-mysql',
+  //   host: "127.0.0.1",
+  //   port: 3000,
+  //   database: 'openlearning',
+  //   user:"root"
+
+  // },
+
+    mysql: {
     // username and password set in /config/local.js
     // but local.js is in gitignore setting
     module: 'sails-mysql',
@@ -46,7 +57,8 @@ module.exports.connections = {
     password :'openlearning',
 
 
-  },
+  // },
+
 
   // MongoDB is the leading NoSQL database.
   // http://en.wikipedia.org/wiki/MongoDB
