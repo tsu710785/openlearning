@@ -1,0 +1,10 @@
+<h1> Editing content </h1>
+<form action="/math/<%= math.id %>" method="POST">
+	<input type="hidden" name="_method" value="put" />
+	<div>title: <input value="<%= math.title %>" name="title" id="title" type="text"/></div>
+	<div>body: <textarea name="body" id="body"><%= math.body %></textarea></div>
+	<input type="submit" value="submit">
+</form>
+
+<a href="/math/edit/<%= math.id %>">Edit</a> | 
+<a href="/math">Back</a>

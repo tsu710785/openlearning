@@ -42,10 +42,19 @@ module.exports.routes = {
     controller: "mathematics",
     action: "showid"
   },
+  "GET /math/edit/:id": {
+    controller: "mathematics",
+    action: "edit"
+  },
+  "GET /math/update/:id": {
+    controller: "mathematics",
+    action: "updatePage"
+  },
+  "PUT /math/:id": {
+    controller: "mathematics",
+    action: "update"
+  },
 
-  // 'GET /edit': {
-  //   view:'editor',
-  // },
 
 
 
