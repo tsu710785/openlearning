@@ -3,7 +3,7 @@
       <div class="col-md-1 col-lg-1">
       </div>
       <div class="col-md-10 col-lg-10">
-      <h1><font color="white">O</font><font color="#8181F7">pen</font> <font color="white">L</font><font color="#F5A9BC">earning</font></h1>
+     <h1><font color="#0404B4" size="30">O</font><font color="#8181F7" size="10">pen&nbsp&nbsp</font> <font color="#04B404" size="30">L</font><font color="#F5A9BC" size="10">earning</font></h1>
 
       <div class="ui-widget ui large icon input">
         <input id="tags" type="text" placeholder="搜尋">
@@ -68,6 +68,18 @@
           <div>
             <div id="edit" class="orange circular ui button" onclick="window.location='/edit';"><i class="glyphicon glyphicon-pencil"></i> E d i t</div>
           </div>
+
+          <% maths.forEach(function(math) { %>
+            <div>
+
+              <h6 style="margin-top:30px"><%= math.title %></h6>
+              <div class="content">
+                <%= math.body %><div style="float:right" class="edit_button"><a href="/math/edit/<%= math.id %>">Edit</a> </div>
+              </div>
+            </div>
+
+          <% }); %>
+
         </div>
         <div class="col-md-0 col-lg-1">  
         </div>  
@@ -76,13 +88,4 @@
   </div>
 
 
-  <% maths.forEach(function(math) { %>
-  <div>
-
-      <h6 style="margin-top:30px"><%= math.title %></h6>
-      <div class="content">
-        <%= math.body %><div style="float:right" class="edit_button"><a href="/math/edit/<%= math.id %>">Edit</a> </div>
-      </div>
-  </div>
-
-  <% }); %>
+  
