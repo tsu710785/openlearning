@@ -57,7 +57,7 @@ module.exports.connections = {
     password :'openlearning',
 
 
-  // },
+  },
 
 
   // MongoDB is the leading NoSQL database.
