@@ -2,6 +2,46 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
+.ui.purple.button{
+	margin-top: 10px;
+	margin-left: 80px;
+}
+#hello{
+	background-image:url("../images/banner.jpg");
+	height: 700px;
+}
+#firstmessage{
+	width: 500px;
+	margin-left: 10px;
+	margin-top: 50px;
+	display: inline-block;
+}
+
+#secondmessage{
+	width: 500px;
+	margin-left: 20px;
+	display: inline-block;
+}
+
+#thirdmessage{
+	width: 500px;
+	margin-left: 10px;
+	margin-top: 50px;
+	display: inline-block;
+}
+
+#forthmessage{
+	width: 500px;
+	margin-left: 20px;
+	display: inline-block;
+}
+
+#searchicon{
+	margin-left: 812px;
+	margin-top: -32px;
+}
+#index2back{
+}
 .dropdown-menu{
 	width:256px	;
 }
