@@ -211,6 +211,23 @@ module.exports = {
   },
 
 
+  practice: function (req, res) {
+    var title = req.param("title");
+    if (!title) return res.send("No title specified.",500);
+
+    English
+    .findOne({
+      title: title
+    }).exec(function (err,penglish){
+        if (err) return res.send(err,500);
+        if (!english) return res.send("english "+title+" not found.",404);
+
+        res.view("practice_eng",{
+          english: english
+        })
+      });
+  },
+
 
 
   _config: {}

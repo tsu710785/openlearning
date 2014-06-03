@@ -214,7 +214,22 @@ module.exports = {
     });
   },
 
+  practice: function (req, res) {
+    var title = req.param("title");
+    if (!title) return res.send("No title specified.",500);
 
+    Mathematics
+    .findOne({
+      title: title
+    }).exec(function (err,mathematics){
+        if (err) return res.send(err,500);
+        if (!mathematics) return res.send("mathematics "+title+" not found.",404);
+
+        res.view("practice_math",{
+          math: mathematics
+        })
+      });
+  },
 
 
   _config: {}

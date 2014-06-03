@@ -41,8 +41,9 @@ module.exports.routes = {
   "GET /math/create": {
     view: "create_math"
   },
-  "GET /math/practice": {
-    view: "practice_math"
+  "GET /math/:title/practice": {
+    controller: "mathematics",
+    action: "practice"
   },
   "GET /math/discuss": {
     view: "discuss_math"
@@ -86,8 +87,9 @@ module.exports.routes = {
   "GET /physics/create": {
     view: "create_physics"
   },
-  "GET /physics/practice": {
-    view: "practice_phy"
+  "GET /physics/:title/practice": {
+    controller: "physics",
+    action: "practice"
   },
   "GET /physics/discuss": {
     view: "discuss_physics"
@@ -132,8 +134,9 @@ module.exports.routes = {
   "GET /english/create": {
     view: "create_english"
   },
-  "GET /english/practice": {
-    view: "practice_eng"
+  "GET /english/:title/practice": {
+    controller: "english",
+    action: "practice"
   },
   "GET /english/discuss": {
     view: "discuss_english"
