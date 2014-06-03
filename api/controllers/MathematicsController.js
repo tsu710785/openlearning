@@ -30,6 +30,10 @@ module.exports = {
      .find()
      .where({title:title})
      .exec(function (err, mathematics) {
+
+      // console.log("bef",mathematics[0].body);
+      // mathematics[0].body = mathematics[0].body.replace(/\n/g,"<br>");
+      // console.log("aft",mathematics[0].body)
      	if (err) {
          req.flash("info", "info: you point to wrong number");
          return res.redirect("/main");

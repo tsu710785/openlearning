@@ -26,15 +26,17 @@
       <h2 style="margin-top:30px"><%= math.title %></h2>
       
       <div class="content">
-        <%= math.body %><div style="float:right" class="edit_button"><a href="/math/edit_content/<%= math.title %>">Edit</a> </div>
+        <%- math.body.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>")%>
+
+      <div style="float:right" class="edit_button"><a href="/math/edit_content/<%= math.title %>">Edit</a> </div>
       </div>
       
       <div class="content">
-        <%= math.example %><div style="float:right" class="edit_button"><a href="/math/edit_example/<%= math.title %>">Edit</a> </div>
+        <%- math.example.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>")%><div style="float:right" class="edit_button"><a href="/math/edit_example/<%= math.title %>">Edit</a> </div>
       </div>
      
       <div class="content">
-        <%= math.exercise %><div style="float:right" class="edit_button"><a href="/math/edit_exercise/<%= math.title %>">Edit</a> </div>
+        <%- math.exercise.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>") %><div style="float:right" class="edit_button"><a href="/math/edit_exercise/<%= math.title %>">Edit</a> </div>
       </div>
   </div>
 
