@@ -4,6 +4,7 @@
 
 #gotomain{
 	margin-left: 420px;
+	margin-top: 280px;
 }
 
 #backbutton{
@@ -28,6 +29,8 @@
 	background-image:url("../images/banner.jpg");
 	background-attachment : fixed;
 	background-repeat : repeat;
+	height: auto;
+
 	
 }
 #firstmessage{
