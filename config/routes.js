@@ -38,6 +38,13 @@ module.exports.routes = {
     controller: "mathematics",
     action: "list"
   },
+  "GET /math/create": {
+    view: "create_math"
+  },
+  "POST /math": {
+    controller: "mathematics",
+    action: "create"
+  },
   'GET /math/:title': {
     controller: "mathematics",
     action: "show_this_chapter"
@@ -62,6 +69,7 @@ module.exports.routes = {
     controller: "mathematics",
     action: "update"
   },
+
 
 
 

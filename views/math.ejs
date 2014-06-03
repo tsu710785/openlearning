@@ -67,18 +67,17 @@
         <div class="block1 col-md-0 col-lg-1">
         </div>
         <div class="block2 col-md-12 col-lg-10" id="mainsection">
-          <div>
-            <div id="edit" class="orange circular ui button" onclick="window.location='/edit';"><i class="glyphicon glyphicon-pencil"></i> E d i t</div>
-          </div>
 
+          <div><a href="/math/create">create</a></div>
           <% maths.forEach(function(math) { %>
-            <div>
+          <a href="math/<%= math.title %>"><div class="orange circular ui button"><%= math.title %></div></a>
+<!--             <div>
 
               <h6 style="margin-top:30px"><%= math.title %></h6>
               <div class="content">
                 <div style="float:right" class="edit_button"><a href="/math/<%= math.title %>">Enter</a> </div>
               </div>
-            </div>
+            </div> -->
 
           <% }); %>
 

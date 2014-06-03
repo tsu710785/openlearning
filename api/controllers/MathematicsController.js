@@ -114,7 +114,7 @@ module.exports = {
     var body = req.body.body;
     var example = req.body.example;
     var exercise = req.body.exercise;
-    console.log( body , example , exercise);
+    
 
     if (typeof body !== 'undefined' && body) {
       //if body!= undefined , update body
@@ -185,7 +185,33 @@ module.exports = {
     // }
     return res.redirect("/math");
 
-},
+  },
+
+  create: function (req, res) {
+
+    var title = req.body.title;
+    var body = req.body.body;
+    var example = req.body.example;
+    var exercise = req.body.exercise;
+    console.log( body , example , exercise);
+    // Send a JSON response
+    Mathematics.create({
+      title: title,
+      body: body,
+      example: example,
+      exercise: exercise
+    }).exec(function (err, mathematics) {
+      if (err) {
+        return res.error();
+      }
+
+      req.flash('info', 'info: Create post success !!!');
+      res.redirect("/math");
+    });
+  },
+
+
+
 
   _config: {}
 
