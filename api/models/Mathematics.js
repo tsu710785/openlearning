@@ -8,20 +8,26 @@
 module.exports = {
 
   attributes: {
-  	id: {
-      type: 'integer',
-      required: true,
-      unique: true
-    },
     title: {
       type: 'string',
-      required: true
+      required: true,
+      unique: true
     },
     body: {
       type: 'text',
       required: true,
 
-    }
+    },
+    example: {
+      type: 'text',
+      required: true,
+
+    },
+    exercise: {
+      type: 'text',
+      required: true,
+
+    },
   }
 };
 

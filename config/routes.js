@@ -40,17 +40,25 @@ module.exports.routes = {
   },
   'GET /math/:title': {
     controller: "mathematics",
-    action: "showid"
+    action: "show_this_chapter"
   },
-  "GET /math/edit/:id": {
+  "GET /math/edit_content/:title": {
     controller: "mathematics",
-    action: "edit"
+    action: "edit_content"
   },
-  "GET /math/update/:id": {
+  "GET /math/edit_example/:title": {
+    controller: "mathematics",
+    action: "edit_example"
+  },
+  "GET /math/edit_exercise/:title": {
+    controller: "mathematics",
+    action: "edit_exercise"
+  },
+  "GET /math/update/:title": {
     controller: "mathematics",
     action: "updatePage"
   },
-  "PUT /math/:id": {
+  "PUT /math/:title": {
     controller: "mathematics",
     action: "update"
   },

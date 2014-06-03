@@ -24,7 +24,7 @@
       <div class="ui button"><i class="large gift icon"></i>數學 / Math
         <ul class="math dropdown-menu">
           <li><a href="math/1">代數</a></li>
-          <li><a href="/2">多項式</a></li>
+          <li><a href="math/2">多項式</a></li>
           <li><a href="2">幾何</a></li>
           <li><a href="#">矩陣</a></li>
           <li><a href="#">微積分</a></li>
@@ -75,12 +75,26 @@
     </div>
   </div>
 
+  <div>
 
-  <% maths.forEach(function(math) { %>
+      <% maths.forEach(function(math) { %>
   <div>
 
       <h2 style="margin-top:30px"><%= math.title %></h2>
-      <div style="float:right" class="edit_button"><a href="/math/<%= math.title %>">Enter</a> </div>
+      
+      <div class="content">
+        <%= math.body %><div style="float:right" class="edit_button"><a href="/math/edit_content/<%= math.title %>">Edit</a> </div>
+      </div>
+      
+      <div class="content">
+        <%= math.example %><div style="float:right" class="edit_button"><a href="/math/edit_example/<%= math.title %>">Edit</a> </div>
+      </div>
+     
+      <div class="content">
+        <%= math.exercise %><div style="float:right" class="edit_button"><a href="/math/edit_exercise/<%= math.title %>">Edit</a> </div>
+      </div>
   </div>
 
   <% }); %>
+  <a href="/math">Back</a>
+  </div>
