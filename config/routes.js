@@ -41,6 +41,12 @@ module.exports.routes = {
   "GET /math/create": {
     view: "create_math"
   },
+  "GET /math/practice": {
+    view: "practice_math"
+  },
+  "GET /math/discuss": {
+    view: "discuss_math"
+  },
   "POST /math": {
     controller: "mathematics",
     action: "create"
@@ -80,6 +86,12 @@ module.exports.routes = {
   "GET /physics/create": {
     view: "create_physics"
   },
+  "GET /physics/practice": {
+    view: "practice_phy"
+  },
+  "GET /physics/discuss": {
+    view: "discuss_physics"
+  },
   "POST /physics": {
     controller: "physics",
     action: "create"
@@ -97,7 +109,7 @@ module.exports.routes = {
     action: "edit_example"
   },
   "GET /physics/edit_exercise/:title": {
-    controller: "",
+    controller: "physics",
     action: "edit_exercise"
   },
   "GET /physics/update/:title": {
@@ -120,6 +132,12 @@ module.exports.routes = {
   "GET /english/create": {
     view: "create_english"
   },
+  "GET /english/practice": {
+    view: "practice_eng"
+  },
+  "GET /english/discuss": {
+    view: "discuss_english"
+  },
   "POST /english": {
     controller: "english",
     action: "create"
@@ -137,7 +155,7 @@ module.exports.routes = {
     action: "edit_example"
   },
   "GET /english/edit_exercise/:title": {
-    controller: "",
+    controller: "english",
     action: "edit_exercise"
   },
   "GET /physics/update/:title": {
