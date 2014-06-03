@@ -202,7 +202,7 @@ module.exports = {
       exercise: exercise
     }).exec(function (err, mathematics) {
       if (err) {
-        return res.error();
+        return res.redirect("/math");
       }
 
       req.flash('info', 'info: Create post success !!!');
