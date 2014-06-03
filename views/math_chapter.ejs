@@ -13,35 +13,45 @@
         </div>
         <div class="block2 col-md-12 col-lg-10" id="mainsection">
 
+<div id="chapter">
+
+      <% maths.forEach(function(math) { %>
+  <div>
+
+      <h2><div id ="h2"><font color="black"><%= math.title %></div></h2>
+      
+      <div class="content">
+        <h3>重點內容：</h3>
+        <%- math.body.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>")%>
+        <div id ="editt"><div class="edit_button"><a href="/math/edit_content/<%= math.title %>"><font color="#0404B4 ">Edit</font></a> </div> </div>
+      </div>
+      
+      <div class="content">
+        <h3>例題</h3>
+        <%- math.example.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>")%>
+        <div id ="editt"><div class="edit_button"><a href="/math/edit_example/<%= math.title %>"><font color="#0404B4">Edit</font></a> </div> </div>
+      </div>
+     
+      <div class="content">
+       <h3>補充題目</h3>
+       <%- math.exercise.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>") %>
+       <div id ="editt"><div class="edit_button"><a href="/math/edit_exercise/<%= math.title %>"><font color="#0404B4">Edit</font></a> </div> </div>
+      </div>
+  </div>
+
+  <% }); %>
+  <br><br>
+  <div class="ui primary button" id="backbutton">  
+  <a href="/math">Back</a>
+  </div>
+  </div></font>
+
+
+
+
         </div>
         <div class="col-md-0 col-lg-1">  
         </div>  
       </div>
     </div>
-  
-  <div>
-
-      <% maths.forEach(function(math) { %>
-  <div>
-
-      <h2 style="margin-top:30px"><%= math.title %></h2>
-      
-      <div class="content">
-        <%- math.body.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>")%>
-
-      <div style="float:right" class="edit_button"><a href="/math/edit_content/<%= math.title %>">Edit</a> </div>
-      </div>
-      
-      <div class="content">
-        <%- math.example.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>")%><div style="float:right" class="edit_button"><a href="/math/edit_example/<%= math.title %>">Edit</a> </div>
-      </div>
-     
-      <div class="content">
-        <%- math.exercise.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>") %><div style="float:right" class="edit_button"><a href="/math/edit_exercise/<%= math.title %>">Edit</a> </div>
-      </div>
-  </div>
-
-  <% }); %>
-  <a href="/math">Back</a>
-  </div>
   </div>

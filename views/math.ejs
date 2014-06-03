@@ -12,17 +12,11 @@
           <div><a href="/math/create">create</a></div>
           <% maths.forEach(function(math) { %>
           <a href="math/<%= math.title %>"><div class="orange circular ui button"><%= math.title %></div></a>
-<!--             <div>
-
-              <h6 style="margin-top:30px"><%= math.title %></h6>
-              <div class="content">
-                <div style="float:right" class="edit_button"><a href="/math/<%= math.title %>">Enter</a> </div>
-              </div>
-            </div> -->
 
           <% }); %>
 
         </div>
+        
         <div class="col-md-0 col-lg-1">  
         </div>  
       </div>
@@ -30,7 +24,8 @@
       <div class="row">
         <div class="block1 col-md-0 col-lg-1">
           </div>
-        <div class="block2 col-md-12 col-lg-10"><a href="/main">back</a></div>
+        <div class="block2 col-md-12 col-lg-10">
+        <a class="ui purple button" href="/main" id="gotomain">back</a></div>
         <div class="block1 col-md-0 col-lg-1">
           </div>
       </div>

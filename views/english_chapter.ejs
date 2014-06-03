@@ -13,6 +13,43 @@
         </div>
         <div class="block2 col-md-12 col-lg-10" id="mainsection">
 
+<div id="chapter">
+
+      <% englishs.forEach(function(english) { %>
+  <div>
+
+      <h2><div id ="h2"><font color="black"><%= english.title %></div></h2>
+      
+      <div class="content">
+        <h3>重點內容：</h3>
+        <%- english.body.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>")%>
+        <div id ="editt"><div class="edit_button"><a href="/english/edit_content/<%= english.title %>"><font color="#0404B4 ">Edit</font></a> </div> </div>
+      </div>
+      
+      <div class="content">
+        <h3>例題</h3>
+        <%- english.example.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>")%>
+        <div id ="editt"><div class="edit_button"><a href="/english/edit_example/<%= english.title %>"><font color="#0404B4">Edit</font></a> </div> </div>
+      </div>
+     
+      <div class="content">
+       <h3>補充題目</h3>
+       <%- english.exercise.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>") %>
+       <div id ="editt"><div class="edit_button"><a href="/english/edit_exercise/<%= english.title %>"><font color="#0404B4">Edit</font></a> </div> </div>
+      </div>
+  </div>
+
+  <% }); %>
+  <br><br>
+  <div class="ui primary button" id="backbutton">  
+  <a href="/english">Back</a>
+  </div>
+  </div></font>
+
+
+
+
+
         </div>
         <div class="col-md-0 col-lg-1">  
         </div>  
@@ -20,27 +57,5 @@
     </div>
 
   
-  <div>
 
-      <% englishs.forEach(function(english) { %>
-  <div>
-
-      <h2 style="margin-top:30px"><%= english.title %></h2>
-      
-      <div class="content">
-        <%= english.body %><div style="float:right" class="edit_button"><a href="/english/edit_content/<%= english.title %>">Edit</a> </div>
-      </div>
-      
-      <div class="content">
-        <%= english.example %><div style="float:right" class="edit_button"><a href="/english/edit_example/<%= english.title %>">Edit</a> </div>
-      </div>
-     
-      <div class="content">
-        <%= english.exercise %><div style="float:right" class="edit_button"><a href="/english/edit_exercise/<%= english.title %>">Edit</a> </div>
-      </div>
-  </div>
-
-  <% }); %>
-  <a href="/english">Back</a>
-  </div>
   </div>

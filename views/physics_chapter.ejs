@@ -13,6 +13,45 @@
         </div>
         <div class="block2 col-md-12 col-lg-10" id="mainsection">
 
+
+  <div id="chapter">
+
+      <% physicss.forEach(function(physics) { %>
+  <div>
+
+      <h2><div id ="h2"><font color="black"><%= physics.title %></div></h2>
+      
+      <div class="content">
+        <h3>重點內容：</h3>
+        <%- physics.body.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>")%>
+        <div id ="editt"><div class="edit_button"><a href="/physics/edit_content/<%= physics.title %>"><font color="#0404B4 ">Edit</font></a> </div> </div>
+      </div>
+      
+      <div class="content">
+        <h3>例題</h3>
+        <%- physics.example.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>")%>
+        <div id ="editt"><div class="edit_button"><a href="/physics/edit_example/<%= physics.title %>"><font color="#0404B4">Edit</font></a> </div> </div>
+      </div>
+     
+      <div class="content">
+       <h3>補充題目</h3>
+       <%- physics.exercise.replace(/\>/g,"&gt").replace(/\</g,"&lt").replace(/\n/g,"<br>") %>
+       <div id ="editt"><div class="edit_button"><a href="/physics/edit_exercise/<%= physics.title %>"><font color="#0404B4">Edit</font></a> </div> </div>
+      </div>
+  </div>
+
+  <% }); %>
+  <br><br>
+  <div class="ui primary button" id="backbutton">  
+  <a href="/physics">Back</a>
+  </div>
+  </div></font>
+
+
+
+
+
+
         </div>
         <div class="col-md-0 col-lg-1">  
         </div>  
@@ -20,27 +59,5 @@
     </div>
 
   
-  <div>
 
-      <% physicss.forEach(function(physics) { %>
-  <div>
-
-      <h2 style="margin-top:30px"><%= physics.title %></h2>
-      
-      <div class="content">
-        <%= physics.body %><div style="float:right" class="edit_button"><a href="/physics/edit_content/<%= physics.title %>">Edit</a> </div>
-      </div>
-      
-      <div class="content">
-        <%= physics.example %><div style="float:right" class="edit_button"><a href="/physics/edit_example/<%= physics.title %>">Edit</a> </div>
-      </div>
-     
-      <div class="content">
-        <%= physics.exercise %><div style="float:right" class="edit_button"><a href="/physics/edit_exercise/<%= physics.title %>">Edit</a> </div>
-      </div>
-  </div>
-
-  <% }); %>
-  <a href="/physics">Back</a>
-  </div>
   </div>
