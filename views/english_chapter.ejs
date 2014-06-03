@@ -1,0 +1,46 @@
+  <div id="hello">
+  <div id="index2back">
+  <br><br>
+      <% include head %>
+
+    <div class="col-md-1 col-lg-1">
+    </div>  
+  </div>
+
+    <div id="index2contents">
+      <div class="row">
+        <div class="block1 col-md-0 col-lg-1">
+        </div>
+        <div class="block2 col-md-12 col-lg-10" id="mainsection">
+
+        </div>
+        <div class="col-md-0 col-lg-1">  
+        </div>  
+      </div>
+    </div>
+
+  
+  <div>
+
+      <% englishs.forEach(function(english) { %>
+  <div>
+
+      <h2 style="margin-top:30px"><%= english.title %></h2>
+      
+      <div class="content">
+        <%= english.body %><div style="float:right" class="edit_button"><a href="/english/edit_content/<%= english.title %>">Edit</a> </div>
+      </div>
+      
+      <div class="content">
+        <%= english.example %><div style="float:right" class="edit_button"><a href="/english/edit_example/<%= english.title %>">Edit</a> </div>
+      </div>
+     
+      <div class="content">
+        <%= english.exercise %><div style="float:right" class="edit_button"><a href="/english/edit_exercise/<%= english.title %>">Edit</a> </div>
+      </div>
+  </div>
+
+  <% }); %>
+  <a href="/english">Back</a>
+  </div>
+  </div>

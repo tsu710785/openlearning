@@ -1,0 +1,10 @@
+<h1 style="margin-top:30px"> Editing <%= physics.title %></h1>
+<form action="/physics/<%= physics.title %>" method="POST">
+	<input type="hidden" name="_method" value="put" />
+
+	<div>exercise: <textarea name="exercise" id="exercise"><%= physics.exercise %></textarea></div>
+	<input type="submit" value="submit">
+</form>
+
+<a href="/physics/edit_exercise_phy/<%= physics.title %>">Edit</a> | 
+<a href="/physics">Back</a>

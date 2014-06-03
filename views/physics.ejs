@@ -1,0 +1,27 @@
+  <div id="hello">
+  <div id="index2back">
+  <br><br>
+  <% include head %>
+
+    <div id="index2contents">
+      <div class="row">
+        <div class="block1 col-md-0 col-lg-1">
+        </div>
+        <div class="block2 col-md-12 col-lg-10" id="mainsection">
+
+          <div><a href="/physics/create">create</a></div>
+          <% physicss.forEach(function(physics) { %>
+          <a href="physics/<%= physics.title %>"><div class="orange circular ui button"><%= physics.title %></div></a>
+
+          <% }); %>
+
+        </div>
+        <div class="col-md-0 col-lg-1">  
+        </div>  
+      </div>
+    </div>
+  </div>
+
+
+
+  

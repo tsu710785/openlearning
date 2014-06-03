@@ -1,0 +1,46 @@
+  <div id="hello">
+  <div id="index2back">
+  <br><br>
+      <% include head %>
+
+    <div class="col-md-1 col-lg-1">
+    </div>  
+  </div>
+
+    <div id="index2contents">
+      <div class="row">
+        <div class="block1 col-md-0 col-lg-1">
+        </div>
+        <div class="block2 col-md-12 col-lg-10" id="mainsection">
+
+        </div>
+        <div class="col-md-0 col-lg-1">  
+        </div>  
+      </div>
+    </div>
+
+  
+  <div>
+
+      <% physicss.forEach(function(physics) { %>
+  <div>
+
+      <h2 style="margin-top:30px"><%= physics.title %></h2>
+      
+      <div class="content">
+        <%= physics.body %><div style="float:right" class="edit_button"><a href="/physics/edit_content/<%= physics.title %>">Edit</a> </div>
+      </div>
+      
+      <div class="content">
+        <%= physics.example %><div style="float:right" class="edit_button"><a href="/physics/edit_example/<%= physics.title %>">Edit</a> </div>
+      </div>
+     
+      <div class="content">
+        <%= physics.exercise %><div style="float:right" class="edit_button"><a href="/physics/edit_exercise/<%= physics.title %>">Edit</a> </div>
+      </div>
+  </div>
+
+  <% }); %>
+  <a href="/physics">Back</a>
+  </div>
+  </div>
