@@ -1,0 +1,10 @@
+<h1 style="margin-top:30px"> Editing <%= english.title %></h1>
+<form action="/english/<%= english.title %>" method="POST">
+	<input type="hidden" name="_method" value="put" />
+
+	<div>exercise: <textarea name="exercise" id="exercise"><%= english.exercise %></textarea></div>
+	<input type="submit" value="submit">
+</form>
+
+<a href="/english/edit_exercise_eng/<%= english.title %>">Edit</a> | 
+<a href="/english">Back</a>

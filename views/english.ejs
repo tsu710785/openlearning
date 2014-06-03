@@ -1,0 +1,27 @@
+  <div id="hello">
+  <div id="index2back">
+  <br><br>
+  <% include head %>
+
+    <div id="index2contents">
+      <div class="row">
+        <div class="block1 col-md-0 col-lg-1">
+        </div>
+        <div class="block2 col-md-12 col-lg-10" id="mainsection">
+
+          <div><a href="/english/create">create</a></div>
+          <% englishs.forEach(function(english) { %>
+          <a href="english/<%= english.title %>"><div class="orange circular ui button"><%= english.title %></div></a>
+
+          <% }); %>
+
+        </div>
+        <div class="col-md-0 col-lg-1">  
+        </div>  
+      </div>
+    </div>
+  </div>
+
+
+
+  

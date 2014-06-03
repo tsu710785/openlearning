@@ -71,6 +71,83 @@ module.exports.routes = {
   },
 
 
+  //physics
+
+  'GET /physics': {
+    controller: "physics",
+    action: "list"
+  },
+  "GET /physics/create": {
+    view: "create_physics"
+  },
+  "POST /physics": {
+    controller: "physics",
+    action: "create"
+  },
+  'GET /physics/:title': {
+    controller: "physics",
+    action: "show_this_chapter"
+  },
+  "GET /physics/edit_content/:title": {
+    controller: "physics",
+    action: "edit_content"
+  },
+  "GET /physics/edit_example/:title": {
+    controller: "physics",
+    action: "edit_example"
+  },
+  "GET /physics/edit_exercise/:title": {
+    controller: "",
+    action: "edit_exercise"
+  },
+  "GET /physics/update/:title": {
+    controller: "physics",
+    action: "updatePage"
+  },
+  "PUT /physics/:title": {
+    controller: "physics",
+    action: "update"
+  },
+
+
+
+  //english
+
+  'GET /english': {
+    controller: "english",
+    action: "list"
+  },
+  "GET /english/create": {
+    view: "create_english"
+  },
+  "POST /english": {
+    controller: "english",
+    action: "create"
+  },
+  'GET /english/:title': {
+    controller: "english",
+    action: "show_this_chapter"
+  },
+  "GET /english/edit_content/:title": {
+    controller: "english",
+    action: "edit_content"
+  },
+  "GET /english/edit_example/:title": {
+    controller: "english",
+    action: "edit_example"
+  },
+  "GET /english/edit_exercise/:title": {
+    controller: "",
+    action: "edit_exercise"
+  },
+  "GET /physics/update/:title": {
+    controller: "english",
+    action: "updatePage"
+  },
+  "PUT /physics/:title": {
+    controller: "english",
+    action: "update"
+  },
 
 
 
