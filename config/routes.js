@@ -34,6 +34,10 @@ module.exports.routes = {
     controller: "main",
     action: "list"
   },
+  'POST /search': {
+    controller: "search",
+    action: "result"
+  },
   'GET /discuss': {
     controller: "discuss",
     action: "list"

@@ -5,9 +5,13 @@
       <h1><font color="white" size="30">O</font><font color="#8181F7" size="10">pen&nbsp&nbsp</font> <font color="#04B404" size="30">L</font><font color="#F5A9BC" size="10">earning</font></h1>
 
       <div class="ui-widget ui large icon input">
-        <input id="tags" type="text" placeholder="搜尋">
+        <form action="../search" method="POST">
+          <input id="tags" name="tags" type="text" placeholder="搜尋">
+        
+        <button type="submit"><i class="search icon"></i></button>
+        </form>
       </div>
-      <div id="searchicon"><i class="search icon"></i></div> 
+
       <br>     
 
     <div class="red four fluid ui buttons">
