@@ -9,9 +9,9 @@
         </div>
         <div class="block2 col-md-12 col-lg-10" id="mainsection">
           
-
-          <h1> <font color="#FF8000">英文</font><font color="#007500">討論區</font> </h1>
-          
+        <div style = "padding-top: 30px">
+          <h1> <font size = "20px" color="#FFCC33">英文</font><font  color="#00E100">討論區</font> </h1>
+        </div> 
           <div id="disqus_thread"></div>
           <script type="text/javascript">
               /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
