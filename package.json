@@ -34,5 +34,10 @@
     "url": "git://github.com/benson/openlearning.git"
   },
   "author": "benson",
-  "license": ""
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benson/openlearning/issues"
+  },
+  "homepage": "https://github.com/benson/openlearning",
+  "devDependencies": {}
 }
