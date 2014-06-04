@@ -107,6 +107,16 @@
 .eng.dropdown-menu{
 	margin-left: 808px;
 }
+
+.hideans{
+	display:none ;
+}
+
+.hideans .show{
+	display:block ;
+}
+
+
 /*
 	Twenty 1.0 by HTML5 UP
 	html5up.net | @n33co
