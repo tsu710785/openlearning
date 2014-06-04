@@ -1,6 +1,6 @@
   <div id="hello">
   <div id="index2back">
-  <br><br>
+    <br><br>
   <% include head %>
 
     <div id="index2contents">
@@ -8,23 +8,25 @@
         <div class="block1 col-md-0 col-lg-1">
         </div>
         <div class="block2 col-md-12 col-lg-10" id="mainsection">
-
-          <div><a href="/physics/create">create</a></div>
-          <% physicss.forEach(function(physics) { %>
-          <a href="physics/<%= physics.title %>"><div class="orange circular ui button"><%= physics.title %></div></a>
-
-          <% }); %>
+          <div id="discuss_button">
+          <a class="ui teal button" href="physics/discuss">物理討論區</a>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <a class="ui teal button" href="math/discuss">數學討論區</a>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <a class="ui teal button" href="english/discuss">英文討論區</a>
+          </div>          
 
         </div>
         <div class="col-md-0 col-lg-1">  
         </div>  
       </div>
 
+
       <div class="row">
         <div class="block1 col-md-0 col-lg-1">
           </div>
         <div class="block2 col-md-12 col-lg-10">
-        <a class="ui purple button" href="/main" id="gotomain">Main Page</a></div>
+        <a class="ui purple button" href="/main" id="gotomainn">back</a></div>
         <div class="block1 col-md-0 col-lg-1">
           </div>
       </div>
@@ -32,6 +34,4 @@
     </div>
   </div>
 
-
-
-  
+  </div>
