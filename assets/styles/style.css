@@ -2,6 +2,11 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
+
+#gotomain2{
+	margin-left: 120px;
+	margin-top: -170px;
+}
 #practicetitle{
 	margin-top: 50px;
 	text-align: center;
