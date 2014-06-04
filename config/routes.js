@@ -34,6 +34,12 @@ module.exports.routes = {
     controller: "main",
     action: "list"
   },
+  'GET /discuss': {
+    controller: "discuss",
+    action: "list"
+  },
+
+
   'GET /math': {
     controller: "mathematics",
     action: "list"
