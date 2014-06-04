@@ -1,9 +1,15 @@
-<h1><%- title %></h1>
-
+<div id="practicetitle">
+<h2 class= "ui header">這是<%- title %>單元的練習題目</h2>
+<div id="divider">
+<div class="ui inverted divider"></div>
+</div>
+</div>
 <%var i=1 %>
 
 <% practices.forEach(function(practice) { %>
 	<div>
+	<div id="practicecontent">
+		<div class="ui red message">
 		<h5>problem <%- i %> </h5>
 	
 		<div><%- practice.problem %></div>
@@ -15,7 +21,10 @@
 		<div class="checkans"><button>Check ans</button>
 			<div class="hideans">ans is <%- practice.ans %></div>
 		</div>
+		</div>
 	</div>
+	</div>
+	<br><br>
 
 <% i=i+1 %>
 <% }); %>
