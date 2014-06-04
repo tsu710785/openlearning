@@ -41,11 +41,14 @@ module.exports.connections = {
     module: 'sails-mysql',
     // // host: "127.0.0.1",
     // // port: 3000,
-    // // database: 'openlearning',
+    database: 'openlearning',
     // // user:"root",
     host:"us-cdbr-east-06.cleardb.net",
     user:"bae0dd26768a23",
     password :'b60112d0',
+    // host:"us-cdbr-east-06.cleardb.net",
+    // user:"bae0dd26768a23",
+    // password :'b60112d0',
 
   },
 
