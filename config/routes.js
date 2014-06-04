@@ -38,6 +38,10 @@ module.exports.routes = {
     controller: "discuss",
     action: "list"
   },
+  "GET /practice/:title": {
+    controller: "practice",
+    action: "list"
+  },
 
 
   'GET /math': {
@@ -47,10 +51,10 @@ module.exports.routes = {
   "GET /math/create": {
     view: "create_math"
   },
-  "GET /math/:title/practice": {
-    controller: "mathematics",
-    action: "practice"
-  },
+  // "GET /math/:title/practice": {
+  //   controller: "mathematics",
+  //   action: "practice"
+  // },
   "GET /math/discuss": {
     view: "discuss_math"
   },
@@ -93,10 +97,10 @@ module.exports.routes = {
   "GET /physics/create": {
     view: "create_physics"
   },
-  "GET /physics/:title/practice": {
-    controller: "physics",
-    action: "practice"
-  },
+  // "GET /physics/:title/practice": {
+  //   controller: "physics",
+  //   action: "practice"
+  // },
   "GET /physics/discuss": {
     view: "discuss_physics"
   },
@@ -140,10 +144,10 @@ module.exports.routes = {
   "GET /english/create": {
     view: "create_english"
   },
-  "GET /english/:title/practice": {
-    controller: "english",
-    action: "practice"
-  },
+  // "GET /english/:title/practice": {
+  //   controller: "english",
+  //   action: "practice"
+  // },
   "GET /english/discuss": {
     view: "discuss_english"
   },

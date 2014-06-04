@@ -1,0 +1,21 @@
+<h1><%- title %></h1>
+
+<%var i=1 %>
+
+<% practices.forEach(function(practice) { %>
+	<div>
+		<h5>problem <%- i %> </h5>
+	
+		<div><%- practice.problem %></div>
+		
+		<div><input type="radio" id="a" name="a" value="a">a.<%- practice.a %></div>
+		<div><input type="radio" id="b" name="b" value="b">b.<%- practice.b %></div>
+		<div><input type="radio" id="c" name="c" value="c">c.<%- practice.c %></div>
+		<div><input type="radio" id="d" name="d" value="d">d.<%- practice.d %></div>
+		<div class="checkans"><button>Check ans</button>
+			<div class="hideans">ans is <%- practice.ans %></div>
+		</div>
+	</div>
+
+<% i=i+1 %>
+<% }); %>
