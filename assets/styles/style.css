@@ -2,9 +2,23 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
+#practicetitle{
+	margin-top: 50px;
+	text-align: center;
+}
+
+#divider{
+	width: 1000px;
+	margin-left: 170px;
+}
+
+#practicecontent{
+	width: 950px;
+	margin-left: 200px;
+}
 
 #discuss_button{
-	margin-top: 200px;
+	margin-top: 160px;
 	margin-left: 120px;
 }
 
@@ -93,6 +107,16 @@
 .eng.dropdown-menu{
 	margin-left: 808px;
 }
+
+.hideans{
+	display:none ;
+}
+
+.hideans .show{
+	display:block ;
+}
+
+
 /*
 	Twenty 1.0 by HTML5 UP
 	html5up.net | @n33co
